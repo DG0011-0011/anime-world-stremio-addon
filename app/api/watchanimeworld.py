@@ -22,7 +22,7 @@ _USER_AGENTS = [
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/119.0",
 ]
 
-BASE_URL = "https://watchanimeworld.net"
+BASE_URL = "https://watchanimeworld.top"
 TIMEOUT = 15
 
 # TTL cache with 15 minutes expiration
