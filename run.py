@@ -34,7 +34,8 @@ def index(lang=None):
     from app.routes.manifest import MANIFEST
     import hashlib
     
-    host = request.headers.get('X-Forwarded-Host', request.host)
+    import os
+    host = os.getenv('REDIRECT_URL') or request.headers.get('X-Forwarded-Host', request.host)
     if lang:
         manifest_url = f'https://{host}/{lang}/manifest.json'
         manifest_magnet = f'stremio://{host}/{lang}/manifest.json'
